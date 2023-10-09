@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">nekoLand Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <div>
+    <form id="survey-form" method="POST" action="/form">
+      <label id="name-label" for="name">Name <input id="name" name="name" type="text" required placeholder="Enter your name" value=""></input></label>
+
+      <label id="email-label" for="email">Email <input id="email" name="email" type="email" required placeholder="Enter your email" value=""></input>
+       
+      <label id="number-label" for="number">Age <input id="number"name="age" type="number" min="18" max="100" placeholder="Enter your age" value=""></input></label>
+      
+      <span>Interesting information about your cat:</span>
+      <textarea placeholder="Enter your comment here..."></textarea>
+      <button type="submit" id="submit" value="submit">Submit</button>
+</form>
+    </div>
+
+
+    </body>
+</html>
